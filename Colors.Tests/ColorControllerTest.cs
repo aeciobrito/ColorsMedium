@@ -21,16 +21,16 @@ namespace Colors.Tests
             Assert.NotNull(colors);
         }
 
-        [Theory]
-        [InlineData("Red")]
-        [InlineData("Black")]
-        public void GetColorTest(string color)
-        {
-            var response = _controller.GetByName(color) as OkObjectResult;
-            var returnColor = response.Value as Color; 
+        // [Theory]
+        // [InlineData("Red")]
+        // [InlineData("Black")]
+        // public void GetColorTest(string color)
+        // {
+        //     var response = _controller.GetByName(color) as OkObjectResult;
+        //     var returnColor = response.Value as Color; 
 
-            //Assert.NotNull(returnColor);
-            Assert.Equal(color.ToUpper(), returnColor.Name.ToUpper());
-        }
+        //     Assert.NotNull(returnColor);
+        //     Assert.Equal(color.ToUpper(), returnColor.Name.ToUpper());
+        // }
     }
 }
